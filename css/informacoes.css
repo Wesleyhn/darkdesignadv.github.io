@@ -1,0 +1,121 @@
+.informacoes {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.informacoes-content h1{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card {
+  background-color: #172941;
+  border-radius: 10px;
+  max-width: 260px;
+  height: 420px;
+}
+
+.card h2 {
+  color: #D9C39A;
+  font-family: 'Myriad Pro';
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card h3 {
+  color: #f2f2f2;
+  font-family: 'Myriad Pro';
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 15px;
+  padding-top: 5px;
+}
+
+.bg-card{
+  background-color: #0C1A27;
+  max-width: 200px;
+  padding:5px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.card p {
+  color: #f2f2f2;
+  font-size: 1rem;
+  margin: 10px 20px;
+  font-family: 'Nunito';
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 1000px) {
+  .informacoes {
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   max-width: 800px;
+  }
+  .card {
+   margin: 0 auto;
+  }
+
+  .informacoes-content h1 {
+    font-size: 1.725rem;
+  }
+ }
+
+
+@media (max-width: 800px) {
+ .informacoes {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+ }
+ .card {
+  margin: 0 auto;
+ }
+}
+
+@media (max-width: 465px) {
+ .informacoes {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 800px;
+ }
+
+ .card{
+  margin: 0 auto;
+ }
+ 
+ .card-1 {
+  max-height: 260px;
+ }
+ .card-2 {
+  max-height: 330px;
+ }
+ .card-3 {
+  max-height: 380px;
+ }
+ .card-4 {
+  height: 440px;
+ }
+
+}
+

@@ -1,0 +1,75 @@
+.box-sobre {
+  max-width: 1160px;
+  height: 600px;
+  background: linear-gradient(#172941, #002961);
+  padding: 40px 20px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 20px;
+}
+
+.box-sobre img{
+  margin: 0 auto;
+  display: flex;
+  max-width: 100%;
+}
+
+.box-sobre h1 {
+  color: #f2f2f2;
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+.box-sobre p {
+  color: #f2f2f2;
+  display: flex;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.225rem;
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 800px) {
+  .box-sobre img {
+    max-width: 250px;
+  }
+  
+  .box-sobre h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .box-sobre p {
+    font-size: 1.175rem;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 465px) {
+  .box-sobre img {
+    max-width: 275px;
+    max-height: 275px;
+  }
+  .box-sobre p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}

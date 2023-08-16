@@ -1,0 +1,69 @@
+.footer {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.footer h1 {
+  font-family: 'nunito' ;
+  font-weight: 800;
+  font-size: 2.725rem;
+  position: relative;
+}
+
+.footer p {
+  font-family: 'nunito';
+  font-size: 1rem;
+  color: #595451;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.footer-copy p {
+  color: #595451;
+  margin: 0px;
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate3d(0, 0, 0);
+}
+
+
+@media (max-width: 800px) {
+  .footer img {
+    display: none;
+  }
+
+  .footer{
+    grid-template-columns:  1fr;
+    padding: 20px;
+  }
+
+  .footer h1, p {
+    text-align: center;
+  }
+
+  .footer a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
